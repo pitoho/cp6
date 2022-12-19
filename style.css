@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+h3::after{
+    content: '';
+    border-bottom: 3px solid;
+    position: absolute;
+    width: 200px;
+    top: 55%;
+    left: 45%;
+}
+.header{
+    position: relative;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: 100px;
+    justify-content: center;
+
+}
+.box1,.box2,.box3,.box4{
+    margin: 10px;
+    width: auto;
+}
+.box1 {
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/about/01.jpg);
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box2 {
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/about/03.jpg);
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.box3{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/about/02.jpg);
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.box4{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/about/04.jpg);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+}
+
+.cube1,.cube2,.cube3{
+    background-color: aqua;
+    margin: 10px;
+}
+.cube1,.cube2{
+    grid-row-start: 1;
+    grid-row-end: 4; 
+}
+.cube1{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/call-action/01.jpg);
+}
+.cube2{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/call-action/02.jpg);
+}
+.cube3{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/home-fashion/call-action/03.jpg);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+.cub1,.cub2,.cub3{
+    margin: 10px;
+}
+.cub1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.cub2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 5; 
+}
+.cub3{
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 10;
+}
+.image1,.image2,.image3{
+    width: 290px;
+    height: 200px;
+}
+.image1{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/blog/blog-thumb-01.jpg);
+}
+.image2{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/blog/blog-thumb-02.jpg);
+}
+.image3{
+    background-image: url(https://htmldemo.net/trio/trio/assets/img/blog/blog-thumb-03.jpg);    
+}
